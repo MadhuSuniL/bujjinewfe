@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+body {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.dark-bg {
+  background-color: #181818;
+}
+
+.gray-bg {
+  background-color: #303030;
+}
+
+.white-gray-bg {
+  background-color: #2f2f2f;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+  border-radius: 10px;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #303030;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+.zero {
+  letter-spacing: -0px;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.text-main {
+  /* background: linear-gradient(to right, #d7610c, #a22f09);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; */
+  color: oklch(70.5% 0.213 47.604);
+}
+.bg-main {
+  @apply bg-orange-600;
+  /* @apply bg-gradient-to-r from-[#d7610c] to-[#a22f09]; */
+}
+
+.font-main {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.icon {
+  @apply text-orange-500;
+}
+.llm-response {
+  line-height: 27px;
+  font-size: 14.7px;
+}
+
+@keyframes text-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 4px #f97316, 0 0 8px #f97316, 0 0 12px #f97316;
+  }
+  50% {
+    text-shadow: 0 0 6px #fff, 0 0 10px #f97316, 0 0 18px #f97316;
+  }
+}
+
+.animate-text-glow {
+  animation: text-glow 2s infinite ease-in-out;
+}
+
+.icon-button {
+  @apply flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition;
+}
