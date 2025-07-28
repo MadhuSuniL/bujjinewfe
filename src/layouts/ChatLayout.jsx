@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Outlet } from 'react-router-dom';
-import LeftSidebar from '../Components/ChatLayout/sidebars/left/LeftSidebar';
-import Header from '../Components/ChatLayout/Header';
+import LeftSidebar from '../components/ChatLayout/sidebars/left/LeftSidebar';
+import Header from '../components/ChatLayout/Header';
 import { SidebarContext } from '../contexts/SidebarContext';
 import Contexts from '../contexts/Contexts';
 
