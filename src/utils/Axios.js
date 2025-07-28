@@ -2,7 +2,8 @@
 import axios from "axios";
 import { getData } from "../utils/localStorage";
 
-export const BACKEND_HOST = "http://localhost:8000/api/";
+export const BACKEND_HOST = "https://bujji-59bb.onrender.com/api/";
+// export const BACKEND_HOST = "http://localhost:8000/api/";
 
 const instanceWithToken = axios.create({
   baseURL: BACKEND_HOST,
