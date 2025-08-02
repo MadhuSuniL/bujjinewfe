@@ -30,6 +30,7 @@ const Prompt = ({
     // Handle prompt submission
     const handleSend = () => {
         if (prompt?.trim() === "") return;
+        stopListening()
         startCompletion();
     };
 
